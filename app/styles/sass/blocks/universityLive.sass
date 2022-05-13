@@ -1,0 +1,199 @@
+.universityLive__row
+	display: flex
+	position: relative
+	justify-content: space-between
+	align-items: flex-start
+	width: 100%
+	margin-top: 48px
+	margin-bottom: 48px
+	flex-flow: row nowrap
+.universityLive__link__big
+	flex: 2 1 auto
+.universityLive__link__smale
+	flex: 0 0 334px
+.universityLive__link
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+	margin-right: $gutter
+	&:last-child
+		margin-right: 0
+.section__universityLive
+	position: relative
+	justify-content: center
+	align-items: flex-start
+	width: 100%
+.universityLive__img
+	width: 100%
+	position: relative
+	display: flex
+	padding: 12px
+	justify-content: flex-start
+	align-items: flex-start
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 0 0
+	height: 300px
+	border-radius: 10px
+.universityLive__lebel
+	position: relative
+	height: 34px
+	justify-content: center
+	align-items: center
+	text-transform: uppercase
+	border-radius: 10px
+	font-weight: 600
+	font-size: 14px
+	line-height: 17px
+	color: #fff
+	padding: 9px 16px 
+.universityLive__lebel__learning
+	background: #225CF3
+.universityLive__lebel__mk
+	background: #1FDB1B
+.universityLive__lebel__lifehack
+	background: #C922F3
+.universityLive__link__big
+	.universityLive__img
+		background-image: url(#{$assetImages}/universityLive__1.png)
+.universityLive__link__smale
+	.universityLive__img
+		background-image: url(#{$assetImages}/universityLive__2.png)
+.universityLive__date
+	margin-top: 12px
+	font-weight: 500
+	font-size: 16px
+	line-height: 130%
+	color: #818181
+.universityLive__title
+	margin-top: 12px
+	font-weight: 600
+	font-size: 20px
+	line-height: 130%
+	color: #000000
+.universityLive__desc
+	margin-top: 20px
+	font-weight: 400
+	font-size: 16px
+	line-height: 130%
+.universityLive__title_h2 
+	font-weight: 600
+	font-size: 64px
+	line-height: 80px
+	color: #000000
+	margin-top: $gutter
+	margin-bottom: 18px
+	width: 100%
+	text-align: left
+.universityLive__row.universityLive__rowright
+	flex-flow: row-reverse nowrap
+	.universityLive__link
+		margin-left: $gutter
+		margin-right: 0
+		&:last-child
+			margin-left: 0
+
+//`@media (max-width: 1400px) { ...}
+@include media-breakpoint-down(xxl)
+
+
+//`@media (max-width:  1200px) { ...}
+@include media-breakpoint-down(xl)
+	.universityLive__row
+		flex-flow: row wrap
+	.universityLive__link__big
+		flex: 2 1 auto
+	.universityLive__link
+		margin-bottom: 20px
+		margin-right: 0
+	.universityLive__link.universityLive__link__smale
+		margin-right: 20px
+		&:last-child
+			margin-right: 0
+	.universityLive__link__smale
+		flex: 2 1 450px
+	.universityLive__row.universityLive__rowright
+		flex-flow: row wrap
+		.universityLive__link.universityLive__link__smale
+			margin-right: 20px
+			&:last-child
+				margin-right: 0
+		.universityLive__link__big
+			flex: 2 1 auto
+		.universityLive__link__smale
+			flex: 2 1 450px
+		.universityLive__link
+			margin-bottom: 20px
+			margin-left: 0
+	.universityLive__row
+		margin-bottom: 0
+		margin-top: $gutter
+	.universityLive__title_h2
+		font-size: 44px
+		line-height: 1.4
+	.universityLive__link__smale
+		margin-top: $gutter
+	.universityLive__link__big
+		.universityLive__img
+			height: 400px
+//`@media (max-width: 992px) { ...}
+@include media-breakpoint-down(lg)
+	.universityLive__link__smale
+		flex: 2 1 300px
+	.universityLive__row.universityLive__rowright
+		.universityLive__link__smale
+			flex: 2 1 300px
+//`@media (max-width: 768px) { ...}
+@include media-breakpoint-down(md)
+	.universityLive__link__smale
+		flex: 2 1 260px
+	.universityLive__row.universityLive__rowright
+		.universityLive__link__smale
+			flex: 2 1 260px
+	.universityLive__link.universityLive__link__big 
+		.universityLive__img
+			height: 300px
+	.universityLive__link.universityLive__link__smale
+		.universityLive__img
+			height: 180px
+	.universityLive__date
+		font-size: 12px
+	.universityLive__title
+		font-size: 18px
+		line-height: 130%
+		margin-top: 8px
+	.universityLive__desc
+		font-size: 14px
+		line-height: 130%
+		margin-top: 10px
+	.universityLive__lebel
+		font-size: 14px
+//`@media (max-width: 576px) { ...}
+@include media-breakpoint-down(sm)
+	.universityLive__link.universityLive__link__smale
+		margin-right: 0
+	.universityLive__row.universityLive__rowright
+		.universityLive__link.universityLive__link__smale
+			margin-right: 0
+	.universityLive__link.universityLive__link__smale
+		.universityLive__img
+			height: 230px
+	.universityLive__img
+		background-position: top center
+//`@media (max-width: 576px) { ...}
+@media (max-width: 430px)
+	.universityLive__link.universityLive__link__smale
+		.universityLive__img
+			height: 180px
+@media (max-width: 376px)
+	.universityLive__title
+		font-size: 16px
+		line-height: 120%
+		margin-top: 8px
+	.universityLive__desc
+		font-size: 12px
+		line-height: 120%
+		margin-top: 10px
+	.universityLive__lebel
+		font-size: 12px
