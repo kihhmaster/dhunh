@@ -21,9 +21,7 @@ $assetImages: "../images/dist"
 // @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
 // @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
 @import 'node_modules/swiper/swiper-bundle'
-// @import 'node_modules/animate.css/animate'
 
-// @import 'node_modules/animate.css/animate'
 // FONTS LOAD SECTION
 	
 
@@ -33,6 +31,40 @@ $assetImages: "../images/dist"
 		font-style: $fstyle
 		font-weight: $fweight
 		src: url($furl) format('woff2')
+
+=keyframes($name)
+	@-webkit-keyframes #{$name}
+		@content
+	@-moz-keyframes #{$name}
+		@content
+	@-ms-keyframes #{$name}
+		@content
+	@keyframes #{$name}
+		@content
+
+// @keyframes rotationOpen 
+// 	0% 
+// 		transform: rotate(0deg)
+// 	100% 
+// 		transform: rotate(180deg)
+// animation-name: rotationClose
+// animation-duration: .2s
+// animation-iteration-count: 1
+// animation-timing-function: linear
+// animation-fill-mode: forwards
+
+// @keyframes rotationClose
+// 	0% 
+// 		transform: rotate(180deg)
+// 	100% 
+// 		transform: rotate(0deg)
+// animation-name: rotationClose
+// animation-duration: .2s
+// animation-iteration-count: 1
+// animation-timing-function: linear
+// animation-fill-mode: forwards
+
+
 /*
 // font-weight helper
 // 100 - Thin (Hairline)

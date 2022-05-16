@@ -1,15 +1,12 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
-import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller } from 'swiper'
-Swiper.use([ Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller ])
+import { Swiper, Pagination, Scrollbar, Navigation, Controller, Autoplay } from 'swiper'
+Swiper.use([ Pagination, Scrollbar, Navigation, Controller, Autoplay ])
 document.addEventListener('DOMContentLoaded', () => {
 	const sliderTop = new Swiper('.event__slider', {
 		speed: 800,
-		loop: true,
-		autoplay: {
-			delay: 0,
-		},
-		freeMode: true,
+		// autoHeight: true,
+		loop: false,
 		slidesPerView: 1,
 		navigation: {
 			nextEl: '.swiper-button-next',
@@ -18,8 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'bullets',
-			clickable: true,
-		},	
+		},
+		scrollbar: {
+			el: '.swiper-scrollbar',
+			draggable: true,
+			dragSize: 'auto',
+		},
+
+
 	})
 
 	
