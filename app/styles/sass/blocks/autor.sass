@@ -1,0 +1,321 @@
+
+.section__autor
+	position: relative
+	width: 100%
+	display: flex
+	display: flex
+	justify-content: center
+	align-items: flex-start		
+	background: #FAFAFA
+	padding-bottom: 80px
+.section__autor__card
+	position: relative
+	width: 100%
+	max-width: 468px
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: center
+	background: #fff
+	margin-right: 20px
+	padding: 40px 70px 26px 70px
+.autor__card__avatar
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	border-radius: 50%
+	text-align: center
+	img
+		position: relative
+		object-fit: cover
+		object-position: center center
+		width: 288px
+		height: 288px
+		border-radius: 50%
+.autor__card__name
+	margin-top: 34px
+	font-style: normal
+	font-weight: 600
+	font-size: 24px
+	line-height: 140%
+	text-align: center
+	color: #000000
+.autor__card__proff
+	margin-top: 14px
+	font-style: normal 
+	font-weight: 400 
+	font-size: 20px 
+	line-height: 130% 
+	text-align: center 
+	color: #818181
+.autor__card__tel
+	margin-top: 63px
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 130%
+	color: #000000	
+.autor__card__mail
+	margin-top: 8px
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 130%
+	color: #000000	
+.section__autor__card,.section__autor__desc
+	margin-top: 36px
+	border-radius: 10px
+.section__autor
+	.container
+		justify-content: flex-start
+		align-items: flex-start
+		flex-flow: row nowrap
+.section__autor__desc
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	width: 100%
+.section__autor__desc__wrap
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	width: 100%
+	padding: 30px
+	background: #fff
+	border-radius: 10px	
+	margin-bottom: 20px
+.autor__desc__h1
+	position: relative
+	width: 100%
+	display: block	
+	font-style: normal
+	font-weight: 600
+	font-size: 24px
+	line-height: 140%
+	color: #000000
+.autor__desc__h2
+	position: relative
+	width: 100%
+	display: block	
+	font-style: normal
+	font-weight: 500
+	font-size: 20px
+	line-height: 140%
+	color: #000000
+	margin-top: 8px
+.autor__desc__text
+	position: relative
+	width: 100%
+	display: block	
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 140%
+	color: #000000	
+	margin-top: 18px
+.autor__desc__question
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+
+.accordion 
+	width: 100%
+	overflow: hidden
+	margin-bottom: 14px
+	border-radius: 10px
+	background-color: #fff
+	&__intro 
+		position: relative
+		cursor: pointer
+	&__content 
+		padding: 0 20px
+		max-height: 0
+		overflow: hidden
+		will-change: max-height
+		transition: all 0.25s ease-out
+		color: #000
+		opacity: 0
+	&__active
+		padding-bottom: 30px
+		background: #fff
+		.accordion__intro 
+			.accordion__intro__img
+				background: #000
+				animation-name: rotationOpen
+				animation-duration: .2s
+				animation-iteration-count: 1
+				animation-timing-function: linear
+				animation-fill-mode: forwards
+		.accordion__content 
+			opacity: 1
+			width: 95%
+			border-top: 1px solid #EBEBEB
+			margin-left: auto
+			margin-right: auto
+.accordion__intro		
+	padding: 25px 45px
+	color: #1d1d1d
+	font-size: 28px
+	font-weight: 400
+	line-height: 34px
+	.accordion__intro__img
+		position: absolute
+		top: 33px
+		right: 10px
+		margin-left: 7px
+		mask-image: url(#{$assetImages}/question__item__iconClose.svg)
+		width: 40px
+		height: 40px
+		background: #1d1d1d
+		mask-repeat: no-repeat
+		mask-position: 0px 0px
+		animation-name: rotationClose
+		animation-duration: .2s
+		animation-iteration-count: 1
+		animation-timing-function: linear
+		animation-fill-mode: forwards
+	&:hover
+		background: $accent
+		color: #fff
+		transition: background .3s ease
+		.accordion__intro__img
+			background: #fff
+.accordion__content
+	color: #1d1d1d
+	font-size: 23px
+	font-weight: 400
+.accordion__content__articles
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+.accordion__content__articles__title
+	margin-top: 30px
+	position: relative
+	width: 100%
+	text-align: left
+	font-weight: 600
+	font-size: 20px
+	line-height: 140%
+	color: #000000	
+	margin-bottom: 12px
+
+.accordion__content__articles__link
+	position: relative
+	display: block
+	margin-bottom: 8px
+	margin-left: 20px
+	padding-bottom: 4px
+	font-style: normal
+	font-weight: 400
+	font-size: 18px
+	line-height: 140%
+	color: #000000
+	border-bottom: 1px solid #EBEBEB
+@keyframes rotationOpen 
+	0% 
+		transform-origin: 15% 12%
+		transform: rotate(0deg)
+	100% 
+		transform-origin: 15% 12%
+		transform: rotate(180deg)
+
+@keyframes rotationClose
+	0% 
+		transform-origin: 15% 12%
+		transform: rotate(180deg)
+	100% 
+		transform-origin: 15% 12%
+		transform: rotate(0deg)
+
+
+//`@media (max-width: 1400px) { ...}
+@media (max-width: 1400px)
+
+
+//`@media (max-width:  1200px) { ...}
+@media (max-width: 1200px)
+	.autor__card__avatar
+		img
+			width: 250px
+			height: 250px
+	.section__autor__card
+		padding: 30px
+		max-width: 360px
+	.autor__card__name
+		font-size: 20px
+		line-height: 1.2
+	.autor__card__tel
+		margin-top: 30px
+		border-top: 1px solid #F0F0F0
+		width: 100%
+		text-align: center
+		padding-top: 20px
+	.autor__card__mail
+	.autor__card__proff
+		font-size: 18px
+
+//`@media (max-width: 992px) { ...}
+@media (max-width: 992px)
+	.autor__card__avatar
+		img
+			width: 200px
+			height: 200px
+	.section__autor__card
+		padding: 40px 10px 20px 10px
+		max-width: 320px
+	.autor__card__name
+		font-size: 20px
+		line-height: 1.2
+	.autor__card__tel
+		margin-top: 30px
+		border-top: 1px solid #F0F0F0
+		width: 100%
+		text-align: center
+		padding-top: 20px
+		font-size: 18px
+	.autor__card__mail
+		font-size: 18px
+	.autor__card__proff
+		font-size: 18px
+	.section__autor
+		.container
+			padding-left: 10px
+			padding-right: 10px
+			flex-flow: column nowrap
+//`@media (max-width: 768px) { ...}
+@media (max-width: 768px)
+	.autor__desc__h2
+		font-size: 18px
+	.autor__desc__text
+		font-size: 16px
+	.section__autor__desc
+		margin-top: 20px
+	.accordion__intro
+		h4
+			font-size: 24px
+	.accordion__content__articles__title
+		font-size: 20px
+	.accordion__content__articles__link
+		font-size: 18px	
+//`@media (max-width: 576px) { ...}
+@media (max-width: 576px)		
+	.section__autor__desc__wrap
+		padding-left: 10px
+		padding-right: 10px
+	.section__autor__card
+		margin-right: 0
+		max-width: 100%	
+	.accordion__content
+		padding-right: 0px
+		padding-left: 0px
